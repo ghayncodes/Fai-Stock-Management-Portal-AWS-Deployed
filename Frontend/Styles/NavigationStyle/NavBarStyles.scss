@@ -1,0 +1,58 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1000;
+    width: 320px;
+    background-color: #00A3E0;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+
+    @media screen and (max-width: 960px){
+        transition: 0.8s all ease;
+    }
+
+    &__logo {
+        display: grid;
+        place-items: center;
+        height: 120px;
+        margin-top: 5%;
+    }
+
+    &__menu {
+        position: relative;
+        margin-top: 20%;
+
+        &__item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 1rem 3rem;
+            font-size: 1.6rem;
+            color: #fff;
+            transition: color 0.3s ease-in-out;
+
+            &.active {
+                color: #fff;
+            }
+
+            &__icon {
+                margin-right: 1rem;
+            }
+        }
+
+        &__indicator {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: calc(100% - 40px);
+            border-radius: 10px;
+            background-color: #00ADEE;
+            z-index: -1;
+            transform: translateX(-50%);
+            transition: 0.3s ease-in-out;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'ManifaPro2-SemiBold';
+  src: local('ManifaPro2-SemiBold'), url(../assets/fonts/ManifaPro2-SemiBold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Ghawar_1.311-Regular';
+  src: local('Ghawar_1.311-Regular'), url(../assets/fonts/Ghawar_1.311-Regular.ttf) format('truetype');
+}
+
+* {
+  font-family: 'ManifaPro2-SemiBold', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
